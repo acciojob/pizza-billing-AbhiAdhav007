@@ -72,17 +72,17 @@ public class Pizza {
 
         if(!isBillGen){
             if(isExtraCheese){
-                this.bill += "Extra Cheese Added: "+this.cheese +"\n";
+                this.bill += "Extra Cheese Added: "+this.cheese+"\n";
             }
             if(isExtraTopping){
-                this.bill += "Extra Toppings Added: "+this.toppings +"\n";
+                this.bill += "Extra Toppings Added: "+this.toppings+"\n";
             }
             if(isTakeAway){
-                this.bill += "Paperbag Added: " +"20" +"\n";
+                this.bill += "Paperbag Added: "+ "20"+"\n";
             }
 
             this.bill+= "Total Price: "+ this.price +"\n";
-
+            isBillGen = true;
         }
         return this.bill;
     }
